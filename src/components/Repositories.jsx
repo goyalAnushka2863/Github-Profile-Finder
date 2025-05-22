@@ -89,7 +89,7 @@ const Repositories = ({ repos, username }) => {
       {sortedAndFilteredRepos.length > 0 ? (
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
           {sortedAndFilteredRepos.map(repo => (
-            <div key={repo.id} className="p-4 hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors duration-200">
+            <div key={repo.id} className="p-4 hover:bg-gray-700 dark:hover:bg-gray-750 transition-colors duration-200">
               <div className="mb-2">
                 <a 
                   href={repo.html_url}
