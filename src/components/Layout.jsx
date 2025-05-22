@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 relative">
       <header className="sticky top-0 z-10 bg-white dark:bg-gray-800 shadow-sm transition-colors duration-300">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       <main className="container mx-auto px-4 py-8">
         {children}
       </main>
-      <footer className="absolute w-full bottom-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-6 transition-colors duration-300">
+      <footer className="sticky w-full bottom-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-6 transition-colors duration-300">
         <div className="container mx-auto px-4 text-center text-gray-600 dark:text-gray-400">
           <p>GitHub Profile Finder &copy; {new Date().getFullYear()}</p>
         </div>
